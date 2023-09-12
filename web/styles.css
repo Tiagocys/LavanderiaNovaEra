@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* #0B124F azul escuro*/
+/* #115A84 azul piscina*/
+/* #32D951 wtsp*/
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 90px;
+    display: flex;
+    background-color: white;
+}
+
+.logo {
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.menu {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.menu a {
+    display: block;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #115A84;
+    font-weight: bold;
+    
+}
+
+.menu a:hover {
+    border-bottom: #115A84 solid 2px;
+}
+
+.telefone {
+    display: flex;
+    position: fixed;
+    right: 0;
+}
+
+.menuHamburguer {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.menuHamburguer img {
+    height: 40px;
+}
+
+.menuHidden {
+    position: fixed;
+    display: none;
+    background-color: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 300px;
+}
+
+.menuHidden li {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #115A84;
+    cursor: pointer;
+}
+
+.menuHidden a {
+    text-decoration: none;
+    color: #115A84;
+}
+
+
+@media (max-width:1130px) {
+    .telefone {
+        display: none;
+    }
+    .menuHamburguer {
+        display: block;
+    }
+    nav {
+        height: 70px;
+    }
+    .logo {
+        height: 40px;
+        margin-top: 15px;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+.telefone img {
+    height: 25px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.telefone p {
+    margin-top: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    color: #115A84;
+}
+
+.btWtspMenu {
+    color: white;
+    background-color: #32D951;
+    height: 90px;
+    text-decoration: none;
+    display: flex;
+}
+
+.btWtspMenu p {
+    font-size: 25px;
+    color: white;
+}
+
+.btWtspMenuImg {
+    height: 70px;
+    margin-top: 10px;
+}
+
+/*---------------Cabeçalho------------------*/
+.cabeçalho {
+    margin-top: 90px;
+    height: 500px;
+    background-image: url(img/bg-escuro.png);
+    background-size: cover;
+}
+
+.textosDoCabeçalho {
+    position: relative;
+    top: 80px;
+    left: 20%;
+    max-width: 500px;
+    color: white;
+}
+
+.textosDoCabeçalho h1 {
+    font-size: 50px;
+}
+
+.textosDoCabeçalho h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.textosDoCabeçalho button {
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+@media (max-width:1130px) {
+    .cabeçalho {
+        margin-top: 70px;
+        height: 400px;
+    }
+    .textosDoCabeçalho {
+        top: 40px;
+        left: 10%;
+    }
+}
+
+@media (max-width:600px) {
+    .cabeçalho {
+        height: 300px;
+    }
+    .textosDoCabeçalho {
+        max-width: 290px;
+    }
+    .textosDoCabeçalho h1 {
+        font-size: 30px;
+    }
+    .textosDoCabeçalho h2 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:300px) {
+    .textosDoCabeçalho {
+        max-width: 200px;
+    }
+    .textosDoCabeçalho h1 {
+        font-size: 25px;
+    }
+}
+
+
+/*------------Como funciona------------*/
+
+#sobre {
+    margin-bottom: 90px;
+}
+
+.nossoProcesso {
+    text-align: center;
+    margin: 60px auto 30px;
+    width: 120px;
+    background-color: #115A84;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.comoFunciona h2 {
+    text-align: center;
+    color: #0B124F;
+    font-size: 30px;
+}
+
+.comoFunciona span {
+    font-style: italic;
+}
+
+.comoFunciona-colunas {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.comoFunciona-coluna {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 40px 10px;
+}
+
+.comoFunciona-coluna h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0B124F;
+    font-weight: 400;
+    font-size: 25px;
+    height: 50px;
+}
+
+.comoFunciona-coluna p {
+    color: #115A84;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.comoFunciona {
+    background-color: white;
+}
+
+@media (max-width:700px) {
+    .comoFunciona-colunas {
+        display: block;
+        margin: auto;
+    }
+    .comoFunciona-coluna {
+        max-width: 600px;
+    }
+}
+
+/*------------------Serviços-----------------*/
+
+#serviços {
+    margin-bottom: 90px;
+}
+
+.serviços {
+    border-bottom: 1px solid gainsboro;
+    background-color: #0B124F;
+    padding: 20px 10px;
+}
+
+.serviçosP {
+    text-align: center;
+    margin: 60px auto 30px;
+    width: 120px;
+    background-color: white;
+    color: #0B124F;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.h2Serviços {
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+
+}
+
+
+.colunas-serviço {
+    max-width: 1300px;
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coluna-serviço {
+    max-width: 400px;
+    margin: auto;
+}
+
+.img-serviço {
+    max-width: 100%;
+}
+.img-serviço img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.texto-serviço {
+    padding: 20px;
+}
+
+@media (max-width:845px) {
+    .coluna-serviço {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-serviço {
+        order: 1;
+    }
+    .texto-serviço {
+        order: 2;
+    }
+}
+
+/*----------------Quem somos--------------*/
+
+.sobre {
+    margin: auto;
+    background-color: #115A84;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sobre h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.sobre p {
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 800px;
+    color: white;
+}
+
+/*----------------whatsapp--------------*/
+
+#whatsapp {
+    margin-bottom: 90px;
+}
+
+.wtsp {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    background-color: #115A84;
+    color: white;
+}
+
+.btWtsp {
+    font-size: 18px;
+    display: flex;
+    text-decoration: none;
+    background-color: #32D951;
+    width: 120px;
+    padding-right: 10px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.btWtspImg {
+    height: 40px;
+}
+
+.btWtsp p {
+    margin: auto;
+    color: white;
+
+}
+
+.textoWtsp {
+    margin: 100px;
+}
+
+@media (max-width:830px) {
+    .wtsp {
+        max-width: 600px;
+    }
+    .textoWtsp {
+        margin: 50px auto;
+    }
+}
+
+@media (max-width:700px) {
+    .wtsp {
+        max-width: 400px;
+        display: block;
+        height: 250px;
+        padding-bottom: 40px;
+    }
+
+    .textoWtsp {
+        margin: auto;
+        padding: 40px;
+    }
+    .textoWtsp h2 {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+/*--------Contato----------*/
+
+#contato {
+    margin-bottom: 150px;
+}
+
+.contato {
+    display: flex;
+    margin: auto;
+    width: 800px;
+}
+
+.formulário {
+    width: 400px;
+    margin: auto;
+}
+
+.formulário h1 {
+    font-weight: lighter;
+}
+
+.formulário input {
+    display: block;
+    box-sizing: border-box;
+    width: 350px;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.formulário textarea {
+    width: 350px;
+    box-sizing: border-box;
+    resize: none;
+    height: 150px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.btEmail {
+    background-color: #0B124F;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.mapa600px {
+    display: none;
+}
+
+.mapa280px {
+    display: none;
+}
+
+@media (max-width:830px) {
+    .mapa600px {
+        display: block;
+        margin: auto;
+        width: 600px;
+    }
+    .mapa400px {
+        display: none;
+    }
+    .contato {
+        display: block;
+        width: 600px;
+    }
+    .formulário {
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    .formulário input {
+        width: 600px;
+    }
+    .formulário textarea {
+        width: 600px;
+    }
+}
+
+@media (max-width:700px) {
+    .mapa400px {
+        display: block;
+    }
+    .mapa600px {
+        display: none;
+    }
+    .contato {
+        display: block;
+        width: 400px;
+    }
+    .formulário {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .formulário input {
+        width: 400px;
+    }
+    .formulário textarea {
+        width: 400px;
+    }
+}
+
+@media (max-width:500px) {
+    .mapa400px {
+        display: none;
+    }
+    .mapa280px {
+        display: block;
+        margin: auto;
+        width: 280px;
+    }
+    .contato {
+        width: 280px;
+    }
+    .formulário {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .formulário input {
+        width: 100%;
+    }
+    .formulário textarea {
+        width: 100%;
+    }
+}
+
+/*------------------FOOTER--------------------*/
+.borderFoot {
+    border-bottom: 1px solid gainsboro;
+    margin: 40px auto;
+}
+
+footer {
+    width: 800px;
+    margin: 40px auto;
+    display: flex;
+}
+
+.logoFooter {
+    max-width: 280px;
+}
+
+.logoFooter img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.logoFooter p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #115A84;
+    margin-bottom: 10px;
+}
+
+.redes img {
+    width: 30px;
+}
+
+.contatoFooter {
+    font-size: 14px;
+    font-weight: 400;
+    color: #115A84;
+    margin: auto;
+    text-align: right;
+}
+
+.copy {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #115A84;
+    margin-bottom: 20px;
+}
+
+@media (max-width:830px) {
+    footer {
+        width: 600px;
+    }
+}
+
+@media (max-width:700px) {
+    footer {
+        display: block;
+        width: 400px;
+    }
+}
+
+@media (max-width:500px) {
+   footer {
+    width: 270px;
+   }
+}
+
