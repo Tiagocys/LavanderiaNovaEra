@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.receptor {
+    margin: auto;
+    text-align: center;
+}
+
+/*------------------FOOTER--------------------*/
+.borderFoot {
+    border-bottom: 1px solid gainsboro;
+    margin: 40px auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 800px;
+    margin: 40px auto;
+    display: flex;
+}
+
+.logoFooter {
+    max-width: 280px;
+}
+
+.logoFooter img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.logoFooter p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #115A84;
+    margin-bottom: 10px;
+}
+
+.redes img {
+    width: 30px;
+}
+
+.contatoFooter {
+    font-size: 14px;
+    font-weight: 400;
+    color: #115A84;
+    margin: auto;
+    text-align: right;
+}
+
+.copy {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #115A84;
+    margin-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width:830px) {
+    footer {
+        width: 600px;
+    }
+}
+
+@media (max-width:700px) {
+    footer {
+        display: block;
+        width: 400px;
+    }
+}
+
+@media (max-width:500px) {
+   footer {
+    width: 270px;
+   }
+}
